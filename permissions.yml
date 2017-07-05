@@ -1,0 +1,819 @@
+groups:
+  Streamer:
+    options:
+      build: 'true'
+      suffix: '&d'
+      prefix: '&8[&dStreamer&8] '
+      nei: '00000000'
+    permissions: []
+  YouTube:
+    options:
+      build: 'true'
+      suffix: '&8[&dYouTube&8] '
+      nei: '00000000'
+  Developer:
+    options:
+      build: 'true'
+      suffix: '&8[&dDeveloper&8] '
+      nei: '00000000'
+  Citizen:
+    options:
+      rank: '900'
+      prefix: '&8[&fCitizen&8] '
+      build: 'true'
+      default: 'true'
+      nei: '00000000'
+    permissions:
+    - mytown.cmd
+    - mytown.cmd.*
+    - essentials.back
+    - randomtp.use.signs
+    - automessage.receive.*
+    - sit
+    - ItemRestrict.bypass.5647.1.*
+    - essentials.delhome
+    - essentials.home
+    - essentials.home.bed
+    - multiverse.portal.access.*
+    - multiverse.access.*
+    - essentials.balance
+    - essentials.spawn
+    - -multiinv.exempt
+    - randomtp.use.signs
+    - herochat.speak.*
+    - essentials.afk.kickexempt
+    - essentials.me
+    - essentials.msg.color
+    - essentials.msg.format
+    - essentials.msg.magic
+    - essentials.tpa
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.tpahere
+    - essentials.teleport.cooldown.bypass
+    - essentials.warp.*
+    - essentials.clearinventory
+    - essentials.chat.color
+    - essentials.chat.format
+    - essentials.chat.magic
+    - essentials.chat.question
+    - essentials.chat.shout
+    - essentials.feed
+    - essentials.heal
+    - -fly
+  VIP:
+    permissions:
+    - multiverse.access.*
+    - multiverse.portal.access.*
+    - nei.item
+    - nei.creative
+    - nei.rain
+    - nei.*
+    - -modifyworld.mobtarget.monster.creeper
+    - gamemode
+    - tp.*
+    - randomtp.use.signs
+    - essentials.fly
+    - essentials.fly.others
+    - essentials.gamemode
+    - essentials.gm
+    - essentials.sethome
+    - essentials.clearinventory
+    - essentials.feed
+    - essentials.heal
+    - essentials.exp.give
+    - essentials.msg.url
+    - essentials.nick
+    - essentials.nick.color
+    - essentials.format
+    - essentials.magic
+    - essentials.back.ondeath
+    - essentials.sethome.multiple.donator+
+    - essentials.chat.url
+    - essentials.give
+    - essentials.give.item-all
+    - essentials.item
+    - essentials.itemspawn.item-all
+    - essentials.keepxp
+    - essentials.sethome.multiple.unlimited
+    - essentials.time.set
+    - essentials.weather
+    - idisguise.*
+    - fly
+    - give.*
+    options:
+      rank: '800'
+      prefix: '&8[&dVIP&8] '
+      build: 'true'
+      nei: '00000000'
+    inheritance:
+    - Citizen
+  Mod:
+    permissions:
+    - nei.item
+    - nei.creative
+    - nei.rain
+    - nei.*
+    - litebans.warn
+    - litebans.*
+    - kick.*
+    - ban.*
+    - mute.*
+    - herochat.kick.*
+    - herochat.ban.*
+    options:
+      rank: '5'
+      build: 'true'
+      prefix: '&8[&5Mod&8] &5'
+      nei: '00000000'
+    inheritance:
+    - VIP
+    - Citizen
+  GM:
+    permissions:
+    - coreprotect.*
+    - multiverse.*
+    - multiworld.teleport.*
+    - multiworld.command.*
+    - multiworld.*
+    - mv.*
+    - -mv.bypass.*
+    - skinsrestorer.*
+    - cofh.*
+    - essentials.tps
+    - randomtp.use.signs
+    - modifyworld.*
+    - essentials.*
+    - bukkit.restart
+    - essentials.restart
+    - minecraft.say
+    - bukkit.say
+    - essentials.say
+    - essentials.sudo
+    - essentials.fireball
+    - worldedit.*
+    - randomtp.*
+    - minecraft.command.achievement.*
+    - bukkit.command.achievement.*
+    - minecraft.command.achievement
+    - bukkit.command.achievement
+    - achievement.*
+    - skill.*
+    - thaumcraft.*
+    - randomtp.*
+    - essentials.gm
+    - essentials.gm.other
+    - essentials.getpos.others
+    - essentials.afk.kickexempt
+    - essentials.kick
+    - essentials.mute
+    - essentials.mute.exempt
+    - essentials.tempban
+    - essentials.togglejail
+    - essentials.togglejail.offline
+    - lwc.mod
+    - essentials.helpop.receive
+    - essentials.list.hidden
+    - essentials.powertool
+    - essentials.powertooltoggle
+    - essentials.realname
+    - essentials.ban
+    - essentials.exempt
+    - essentials.invsee
+    - essentials.jails
+    - essentials.socialspy
+    - essentials.tempban.offline
+    - essentials.tempban.exempt
+    - essentials.unban
+    - essentials.tp
+    - essentials.teleport.hidden
+    - essentials.break
+    - essentials.break.bedrock
+    - essentials.enchant
+    - essentials.exp
+    - essentials.exp.give
+    - essentials.exp.give.others
+    - essentials.exp.others
+    - essentials.exp.set
+    - essentials.exp.set.others
+    - essentials.feed
+    - essentials.feed.others
+    - essentials.fly
+    - essentials.fly.others
+    - essentials.gamemode
+    - essentials.gamemode.others
+    - essentials.give
+    - essentials.give.item.all
+    - essentials.god
+    - essentials.got.others
+    - essentials.hat
+    - essentials.heal
+    - essentials.heal.others
+    - essentials.heal.cooldown.bypass
+    - essentials.item
+    - essentials.kit.others
+    - essentials.more
+    - essentials.repair
+    - essentials.repair.armor
+    - essentials.repair.enchanted
+    - essentials.time.set
+    - essentials.unlimited
+    - essentials.sell
+    - essentials.afk.others
+    - essentials.nick.others
+    - essentials.seen.extra
+    - essentials.spawner
+    - essentials.spawner.*
+    - essentials.list.hidden
+    - essentials.whois
+    - essentials.antioch
+    - essentials.backup
+    - essentials.ban.offline
+    - essentials.banip
+    - essentials.broadcast
+    - essentials.burn
+    - essentials.clearinventory
+    - essentials.clearinventory.others
+    - essentials.deljail
+    - essentials.ext
+    - essentials.essentials
+    - essentials.invsee.modify
+    - essentials.kickall
+    - essentials.kill
+    - essentials.lightning
+    - essentials.lightning.others
+    - essentials.setjail
+    - essentials.thunder
+    - essentials.jail.exempt
+    - essentials.unbanip
+    - essentials.vanish
+    - essentials.vanish.see
+    - essentials.weather
+    - essentials.setspawn
+    - essentials.back
+    - essentials.delhome.others
+    - essentials.delwarp
+    - essentials.home.others
+    - essentials.jump
+    - essentials.sethome.others
+    - essentials.setwarp
+    - essentials.warp.overwrite.*
+    - essentials.top
+    - essentials.tp.others
+    - essentials.tpo
+    - essentials.tppos
+    - essentials.chat.spy
+    - essentials.signs.break.*
+    - essentials.signs.create.*
+    - mytown.*
+    - worldedit.*
+    - modifyworld.*
+    - opis.*
+    - essentials.signs.*
+    - herochat.*
+    options:
+      rank: '2'
+      prefix: '&8[&eGM&8] '
+      build: 'true'
+      nei: '11111111'
+    inheritance:
+    - Mod
+    - VIP
+    - Citizen
+  Admin:
+    options:
+      rank: '1'
+      prefix: '&0[&2Admin&0]&8 '
+      build: 'true'
+      suffix: '&c'
+      nei: '11111111'
+    inheritance:
+    - GM
+    - Mod
+    - VIP
+    - Citizen
+    permissions:
+    - nei.*
+    - nei.item
+    - nei.creative
+    - nei.rain
+    - randomtp.use.signs
+    - '*'
+    - promote.*
+    - demote.*
+    - worldborder.*
+    - worldguard.*
+    - permissions.*
+users:
+  9664f0d7-7b0d-3f27-bd26-947e37845a0e:
+    group:
+    - Admin
+    options:
+      name: Thranduel
+  a31eb9eb-cff0-3ebe-b050-165cfbc6910d:
+    options:
+      name: djrenagade
+    group:
+    - GM
+  7e5caef5-7bd8-3996-835e-e4044f674c75:
+    group:
+    - Admin
+    options:
+      name: t0rched
+  fabb84d9-c587-3d0c-8368-7243903a127b:
+    group:
+    - GM
+    options:
+      name: rmtworks
+  5232ddbe-0240-3961-bef4-ec48357105a9:
+    group:
+    - GM
+    options:
+      name: DonVanhugenstyn
+  0f17a67c-34b6-3809-9b13-d8d12be40469:
+    group:
+    - GM
+    options:
+      name: LokiTheDemigoat
+  e9893eaa-6432-447d-97d4-e61369479971:
+    options:
+      name: t0rched
+    group:
+    - VIP
+  befd8a17-d86f-3c36-9a43-decd9798d1b4:
+    options:
+      name: alcazar
+    group:
+    - Citizen
+  13a52d37-ae43-31d9-bcbf-3e4987e18e45:
+    options:
+      name: mr_joseph
+    group:
+    - Citizen
+  0419cc67-c541-3f38-8766-afb2a3e59e92:
+    options:
+      name: blockhead
+    group:
+    - Citizen
+  a01e3843-e521-3998-958a-f459800e4d11:
+    options:
+      name: Player
+    group:
+    - Citizen
+  8690bbbc-b378-372f-80af-db04aee0d72d:
+    options:
+      name: DjRenagade
+    group:
+    - GM
+  109fb397-58f2-3a9a-92c1-5a21ac5113c2:
+    options:
+      name: test_user
+    group:
+    - Citizen
+  9c839981-b93e-318b-b289-a7bf5032d496:
+    options:
+      name: another_user
+    group:
+    - Citizen
+  999ef200-5a27-361f-babd-487ad4b620b5:
+    options:
+      name: newnewnew
+    group:
+    - Citizen
+  39591c90-5a6e-3bcd-b919-009123579b45:
+    options:
+      name: rommyrom
+    group:
+    - Citizen
+  9d314935-45eb-3eb9-89f0-08784eea12e1:
+    options:
+      name: number9
+    group:
+    - Citizen
+  5ab3bbab-ab4e-3da3-96ba-90850d1395b2:
+    options:
+      name: necro
+    group:
+    - Citizen
+  3df26e9d-16b7-333b-9031-9d66aff0ce4b:
+    options:
+      name: meglo
+    group:
+    - Citizen
+  e87d7d0f-0d16-3e9b-a02b-246751da8873:
+    options:
+      name: onemoretime
+    group:
+    - Citizen
+  1809563b-084e-35e8-bd44-cbe877261079:
+    options:
+      name: Happiny
+    group:
+    - God
+  d8907525-e77d-37ea-8532-0ab7509fcc14:
+    options:
+      name: Existency
+    group:
+    - GM
+  cf9f9e5e-a599-327a-8c2b-1277ea0d964e:
+    options:
+      name: viking
+    group:
+    - Citizen
+  7e4a10f7-21e1-3d50-b47b-da0b1b6cc753:
+    options:
+      name: tress
+    group:
+    - Citizen
+  e234b619-7677-3d1b-89e0-4da937f23fcd:
+    options:
+      name: mrpickle
+    group:
+    - Citizen
+  cd2640f9-c8b1-3b7f-9c37-0cb6721ea27b:
+    options:
+      name: rom4ster
+    group:
+    - God
+  72790ff6-df88-30f5-b005-0d9e7e27bbc4:
+    options:
+      name: n00ber
+    group:
+    - Citizen
+  060d7f8a-d148-3a0f-843c-785f22a383a7:
+    options:
+      name: mag9
+    group:
+    - Citizen
+  5aa67e9e-cd30-391b-9783-d769bf97bf12:
+    options:
+      name: numbernine
+    group:
+    - Citizen
+  fa447deb-1c6a-3894-97d0-61bfc9d628ed:
+    options:
+      name: Dio_The_Canadian
+    group:
+    - YouTube
+    - Streamer
+    - GM
+  7db23794-3b43-3514-a88b-b5b8928ccd27:
+    options:
+      name: Cidah
+    group:
+    - God
+  6caaab73-0ab4-3a12-9fa9-620f834fc5ea:
+    options:
+      name: coyotegamer
+    group:
+    - Citizen
+  dd03e153-7d85-3cca-be89-15b83c3a571a:
+    options:
+      name: LordSawyer2002
+    group:
+    - Citizen
+  b27103b7-67c9-3a3c-b4d9-f50d5498ec88:
+    options:
+      name: PandaLight
+    group:
+    - Citizen
+  b6cfcf67-adc7-335a-8791-261a6bacf253:
+    options:
+      name: bcbrains
+    group:
+    - Citizen
+  6eb809b4-2c62-34c3-8cff-de41f9f8de60:
+    options:
+      name: genotype1
+    group:
+    - Citizen
+  a866b66f-965c-358d-b661-fbbb97915bb3:
+    options:
+      name: T1000
+    group:
+    - Mod
+  cc18037d-79c8-32ce-97e0-de221d8213d9:
+    options:
+      name: Kayden_The_Gamer
+    group:
+    - GM
+  2da088ca-26d8-3360-bbb0-2fc01118d4f9:
+    options:
+      name: Gattaca_
+    group:
+    - Citizen
+  67797792-c239-3a00-adda-1026611df9f1:
+    options:
+      name: aalex1247
+    group:
+    - God
+  1bb83427-a374-3b44-a3bc-c8c670553a90:
+    options:
+      name: craftertyler55
+    group:
+    - Citizen
+  597c9acb-572b-3f3f-bad1-86574d65e747:
+    options:
+      name: KevikoMC
+    group:
+    - Citizen
+  68f3fb6b-ac51-39bf-99e7-813fb53736cc:
+    options:
+      name: serial
+    group:
+    - Citizen
+  cb8510ab-056a-33fa-abc3-186cc20b3993:
+    options:
+      name: RiPtoyou
+    group:
+    - Citizen
+  a3988fe1-fd48-32ad-8d02-f49dd5d898c8:
+    options:
+      name: Beldhyr
+    group:
+    - Citizen
+  6319b0ee-fc53-3751-afb7-bc4c87bd7978:
+    options:
+      name: Stinkmeaner420
+    group:
+    - Citizen
+  a1b4d8e5-032d-3eca-8d70-510536a05374:
+    options:
+      name: cruncher
+    group:
+    - Citizen
+  0ed76ffd-6aab-3e9c-864b-5f936c69b6dc:
+    options:
+      name: ImmortalYFG
+    group:
+    - Citizen
+  2b0e2628-5f3b-30c0-a50e-a68407f6b3e7:
+    options:
+      name: mojangles
+    group:
+    - Citizen
+  19ccfded-0c20-3474-a610-4dd6d9f5ee09:
+    options:
+      name: kieron196
+    group:
+    - Citizen
+  190a7a32-9dcd-3b3d-9876-45f7b708991d:
+    options:
+      name: burn
+    group:
+    - Citizen
+  72ec7c52-1eba-3e7b-adaf-96ab8357ca6f:
+    options:
+      name: jlg1000
+    group:
+    - Citizen
+  d14a8612-b943-3e5e-b096-b4043dcf5959:
+    options:
+      name: NTkot
+    group:
+    - Citizen
+  d7afe0a6-a4d6-30dc-8c52-29e24451db92:
+    options:
+      name: alexis1752
+    group:
+    - Citizen
+  bc1e8444-8f0c-3cf5-a75a-9e11cb57634f:
+    options:
+      name: MineMaster666
+    group:
+    - Citizen
+  3ea21063-19a9-34c2-ae34-f2c9e1de7a89:
+    options:
+      name: Sim3k86
+    group:
+    - GM
+  0b772186-b8d1-35ae-9987-553885136580:
+    options:
+      name: SydBarret
+    group:
+    - Citizen
+  6abc5173-f5a3-3631-aafb-dc5b7e6eb449:
+    options:
+      name: Jakkarr
+    group:
+    - God
+  be134234-546d-322e-8368-04bfd89594fa:
+    options:
+      name: Caleb__M
+    group:
+    - Citizen
+  82fe2d36-c148-3a9e-9673-6024000ae57f:
+    options:
+      name: Saighdiuir
+    group:
+    - Citizen
+  c17283f6-147f-30f9-afe2-634b22720ec5:
+    options:
+      name: theAdmin
+    group:
+    - Admin
+  ef07e3d5-ad71-3975-b2b2-d73f2ea17b6f:
+    options:
+      name: theadmin
+    group:
+    - Admin
+  ba23394e-45c6-321a-817b-2177d1f391d7:
+    options:
+      name: ImDaBatman
+    group:
+    - God
+  6b943ce9-7efb-3bda-a78a-1ed842010af3:
+    options:
+      name: PossiblePizzaman
+    group:
+    - Citizen
+  2fe597b9-f82d-3cb9-8773-84afc3ad5213:
+    options:
+      name: thereddirtkid
+    group:
+    - Citizen
+  74bbb3eb-6394-3ee8-b3f7-e60818686c92:
+    options:
+      name: newkid
+    group:
+    - Citizen
+  6504b87d-7faf-3590-bf6e-7fb74a77ef2c:
+    options:
+      name: BabyGamerz123
+    group:
+    - Citizen
+  10d33b1d-1a6c-363d-9279-d016cc2ebca4:
+    options:
+      name: Wreek
+    group:
+    - Citizen
+  5b78ec90-0b49-3d71-ad2b-4044041f6ae8:
+    options:
+      name: JJWomble
+    group:
+    - GM
+  af6347eb-35b0-39e3-b71d-ed115c053763:
+    options:
+      name: SgtMich
+    group:
+    - Citizen
+  23f990a2-2998-363f-a1ed-d9922ba253e1:
+    options:
+      name: challenger
+    group:
+    - Citizen
+  78cc5038-e0b9-32ef-9aa2-acc520a94913:
+    options:
+      name: abishoparts
+    group:
+    - Citizen
+  57653cd0-cc42-39d4-8ba6-a5055d9e65e3:
+    options:
+      name: thereaper
+    group:
+    - Citizen
+  33e799f4-0a2a-37cf-927b-53aef6cb1fa5:
+    options:
+      name: test55
+    group:
+    - Citizen
+  df6ed0a2-732a-3f59-89aa-480d82e0dcd2:
+    options:
+      name: Fancy_BUNANA12
+    group:
+    - Citizen
+  faecedbd-0193-3518-b304-f33309c38438:
+    options:
+      name: momo111098
+    group:
+    - Citizen
+  1c8b0e36-3844-3e94-a8f9-2ee5b8511c0f:
+    options:
+      name: M4NDJrJR
+    group:
+    - Citizen
+  a03d76e0-9645-3d13-b545-cec7e7df6ed4:
+    options:
+      name: Super66648
+    group:
+    - Citizen
+  1c2929a6-cb30-3dd8-b561-522f2482ef70:
+    options:
+      name: desapoint
+    group:
+    - Citizen
+  paramhd:
+    group:
+    - God
+  devoc:
+    group:
+    - Rogue
+  8e45b1cb-ad03-3fd7-aa4d-ae10224c2d02:
+    group:
+    - God
+    options:
+      name: ParmHD
+  d054e978-6b5c-3b05-b23b-c487b2101f68:
+    group:
+    - God
+    options:
+      name: thejoobear
+  c9561ddb-ca10-3ac3-80f2-f85389d4b1aa:
+    group:
+    - God
+    options:
+      name: x_MsAllyKat_x
+  cb106699-51c2-3753-a665-478b97b25523:
+    group:
+    - God
+    options:
+      name: AntiDruid
+  4a9d4889-a3e1-3372-89ae-5d69b564f96a:
+    options:
+      name: mrMarvelous
+    group:
+    - God
+  7156db6f-8060-3504-bfd9-70297322b50e:
+    options:
+      name: Nick455
+    group:
+    - God
+  e71fa50e-9213-3773-846f-18411f23dd8e:
+    options:
+      name: cool098123
+    group:
+    - Citizen
+  b63905e4-ae87-33bc-8579-559fdded3617:
+    options:
+      name: Skoliro
+    group:
+    - Citizen
+  18462e54-ad67-35b5-a812-ef4913427cd6:
+    options:
+      name: Zazus_DK
+    group:
+    - Citizen
+  c8d907dd-77e1-32de-98b1-9363ee630f96:
+    options:
+      name: Raccoon_Man
+    group:
+    - Citizen
+  b5eb8d5b-2a59-34fe-a138-e5d14674491a:
+    options:
+      name: Th3Fanbus
+    group:
+    - GM
+  6c360d9c-ab29-35b5-b7a2-e379000b294e:
+    options:
+      name: Garay
+    group:
+    - Citizen
+  5cf32de3-332d-4a77-939a-a3ecdd402e91:
+    options:
+      name: rom4ster
+    group:
+    - God
+  50bf5039-d7df-4d90-b470-16665b1983a6:
+    options:
+      name: RampageRSLife
+    group:
+    - God
+  4e345c9c-c520-4f3d-8c55-46b8d7c907ec:
+    group:
+    - Admin
+    options:
+      name: faves
+  4aadc802-65f8-4fad-993b-98f83149b95a:
+    group:
+    - VIP
+    options:
+      name: Thranduel
+  niz2012:
+    group:
+    - Citizen
+  f558b215-6208-4b05-a2b9-5b221099e807:
+    group:
+    - God
+    options:
+      name: ndiniz2012
+  7642ae80-0048-4ee3-8977-dd11a7773385:
+    group:
+    - GM
+    options:
+      name: Th3Fanbus
+  1873b9a6-f227-40cb-97a4-994ebcc3d0d3:
+    group:
+    - God
+    options:
+      name: Nick455
+  c3ee07c8-8b00-4cd3-b0f0-8c4c240f66cd:
+    options:
+      name: Derakel
+    group:
+    - Admin
+  5f092a00-1958-381f-9de8-ee3d46512236:
+    options:
+      name: hey_joe
+    group:
+    - Admin
+schema-version: 1

@@ -1,0 +1,19 @@
+{
+  "name": "permnei",
+  "version": "0.0.0",
+  "description": "PermissionsEx to NotEnoughItems bridge",
+  "main": "permnei.js",
+  "scripts": {
+    "start": "node permnei.js"
+  },
+  "dependencies": {
+    "js-yaml": ">=3.8.4"
+  },
+  "keywords": [
+    "node",
+    "nei",
+    "permissionsex"
+  ],
+  "author": "Th3Fanbus",
+  "license": "GPL-3.0"
+}
